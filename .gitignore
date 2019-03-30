@@ -1,2 +1,5 @@
 
 *.ipch
+*.exe
+/.vscode
+*.json
