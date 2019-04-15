@@ -24,7 +24,7 @@ Tree *Tree::treeSearch(int value)
 		return this;
 	else
 	{
-		if (value < val)
+		if (value <= val)
 			return lChild->treeSearch(value);
 		else
 			return rChild->treeSearch(value);
@@ -41,7 +41,7 @@ void Tree::treePreWalk()
 Tree *Tree::treeMax()
 {
 	if (this == nullptr)
-		return 0;
+		return nullptr;
 	Tree *node = this;
 	while (node->rChild != nullptr)
 	{
@@ -52,7 +52,7 @@ Tree *Tree::treeMax()
 Tree *Tree::treeMin()
 {
 	if (this == nullptr)
-		return 0;
+		return nullptr;
 	Tree *node = this;
 	while (node->lChild != nullptr)
 	{
